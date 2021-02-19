@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img class="animate" id="logo" src="logo.png" alt="logo"/>
+            Tic Tac Toe
+        </header>
+
+        <div id="display"></div>
+        <div id="container">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="buttonContainer">
+            <button id="restartButton">RESTART</button>
+            <div id="checkbox">
+                <label for="chooseOpponent">vs Computer</label>
+                <input id="chooseOpponent" type="checkbox">
+            </div>
+        </div>
+        <footer>
+            Made by SpicyHolo for The Odin Project | <a href="https://github.com/spicyholo/tictactoe">Github Source</a>
+        </footer>
+    </body>
+
+    <script src="tictactoe.js"></script>
+</html>

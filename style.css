@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --logo-color: rgb(80,32,108);
+    --logo-secondary-color: rgb(61,25,82);
+    --border-color: rgb(196,196,196);
+    --footer-color: rgb(184,142,16);
+}
+body 
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+header {
+    font-size: 64px;
+    color: var(--logo-color);
+    text-shadow: 1px 1px 0px var(--logo-secondary-color);
+    text-align: center;
+    font-weight: bold;
+
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#logo {
+    width: 80px;
+    position: relative;
+    top: 15px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 0px darkgreen;
+    text-align: center;
+    font-weight: bold;
+}
+
+#container {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    text-align: center;
+    font-size: 96px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Only inner border */
+
+.cell {
+    min-height: 132px;
+    min-width: 132px;
+    padding: 0px;
+    border-left: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+div:nth-child(3n+1).cell {
+    border-left: 0;
+}
+
+div:nth-child(n+7).cell {
+    border-bottom: 0;
+}
+
+#buttonContainer {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#restartButton {
+    height: 60px;
+    width: 180px;
+
+    border: 0;
+    background-color: var(--logo-color);
+    color: white;
+    font-size: 24px;
+    box-shadow: 4px 4px 0px var(--logo-secondary-color);
+    outline: 0;
+}
+
+#restartButton:hover {
+    background-color: rgb(101, 47, 133);
+}
+#restartButton:active {
+    background-color: rgb(138, 59, 184);
+}
+
+#checkbox {
+    padding: 10px;
+}
+
+input {
+    transform: scale(1.5)
+}
+
+footer 
+{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+
+    text-align: center;
+    color: var(--footer-color);
+}
